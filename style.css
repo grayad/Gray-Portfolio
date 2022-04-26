@@ -70,3 +70,50 @@ header nav ul li a {
 
 /* content sections styles */
 
+h2 {
+    color: teal;
+    font-size: 38px;
+    text-align: right;
+}
+
+.content {
+    padding: 20px 50px 20px 100px;
+}
+
+/* about me section */
+.about-me{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.para-about {
+    padding: 30px;
+}
+
+/* my work section */
+.my-work {
+    padding: 15px;
+    display: flex;
+}
+
+.work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+
+/* contact me section */
+.contact-me {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
