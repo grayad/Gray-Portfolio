@@ -113,6 +113,16 @@ h2 {
     justify-content: space-evenly;
 }
 
+.work-text {
+    background-color: lightpink;
+    color: teal;
+    text-align: center;
+}
+
+.card-container {
+    padding: 10px;
+}
+
 /* contact me section */
 .contact-me {
     padding: 15px;
