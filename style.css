@@ -37,7 +37,6 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 1.25vw;
     gap: 1rem;
 }
 
@@ -45,7 +44,7 @@ header nav ul li a {
     border-bottom: 3px solid var(--primary-color);
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 1.40vw;
+    font-size: 1.6vw;
 }
 
 .name {
@@ -82,8 +81,10 @@ h3 {
     font-size: 45px;
     font-family: sans-serif;
     text-align: right;
-    padding: 10px;
+    padding: 20px;
     display: flex;
+    flex-basis: 20%;
+    justify-content: end;
 }
 
 .content {
@@ -101,6 +102,9 @@ h3 {
 .para-about {
     padding: 30px;
     border-left: solid teal;
+    flex: 1 1 80%;
+    font-size: 1vw;
+    font-family: sans-serif;
 }
 
 /* my work section */
@@ -113,6 +117,7 @@ h3 {
 .work-cards {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 80%;
     align-items: center;
     padding: 30px;
     border-left: solid teal;
@@ -126,7 +131,11 @@ h3 {
 }
 
 .card-container {
-    padding: 10px;
+    padding: 100px 200px;
+    background-image: url(./Images/placeholder.jfif);
+    background-size: cover;
+    margin: 5px;
+    border: solid lightpink;
 }
 
 /* contact me section */
@@ -140,10 +149,12 @@ h3 {
 .contact-info {
     padding: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-left: solid teal;
     gap: 100px;
-    font-size: 25px;
+    font-size: 1.4vw;
+    font-family: sans-serif;
+    flex: 1 1 80%;
 }
 
 .contact-info a {
