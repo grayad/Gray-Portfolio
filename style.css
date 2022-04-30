@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 :root{
     --primary-color: #90F2F2;
     --secondary-color: #3a3a3a;
@@ -17,13 +17,13 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding: 15px 50px 15px 0;
-    font-family: sans-serif;
+    font-family: montserrat, sans-serif;
 }
 
 header h1 {
     padding: 10px 20px 10px 100px;
     background-color: var(--primary-color);
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 header a {
@@ -37,14 +37,13 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
 }
 
 header nav ul li a {
     border-bottom: 3px solid var(--primary-color);
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 1.6vw;
+    font-size: 2rem;
 }
 
 .name {
@@ -68,18 +67,18 @@ header nav ul li a {
     right:100px;
     bottom: 30px;
     padding: 10px;
-    font-family: sans-serif;
+    font-family: montserrat, sans-serif;
     color: var(--secondary-color);
     background-color: var(--primary-color);
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 /* content sections styles */
 
 h3 {
     color: teal;
-    font-size: 45px;
-    font-family: sans-serif;
+    font-size: 3rem;
+    font-family: montserrat, sans-serif;
     text-align: right;
     padding: 20px;
     display: flex;
@@ -89,22 +88,21 @@ h3 {
 
 .content {
     padding: 20px 50px 20px 100px;
-    background-color: rgb(219, 222, 224);
+    background-color: rgb(197, 215, 227);
 }
 
 /* about me section */
 .about-me{
     padding: 15px;
     display: flex;
-    align-items: center;
 }
 
 .para-about {
     padding: 30px;
     border-left: solid teal;
     flex: 1 1 80%;
-    font-size: 1vw;
-    font-family: sans-serif;
+    font-size: 1.5em;
+    font-family: montserrat, sans-serif;
 }
 
 /* my work section */
@@ -112,7 +110,7 @@ h3 {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-}
+    }
 
 .work-cards {
     display: flex;
@@ -128,6 +126,7 @@ h3 {
     background-color: lightpink;
     color: teal;
     text-align: center;
+    font-family: sans-serif;
 }
 
 .card-container {
@@ -143,16 +142,14 @@ h3 {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .contact-info {
     padding: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-left: solid teal;
-    gap: 100px;
-    font-size: 1.4vw;
+    font-size: 1.6rem;
     font-family: sans-serif;
     flex: 1 1 80%;
 }
@@ -163,3 +160,128 @@ h3 {
     border-bottom: #3a3a3a solid;
     padding: 3px;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1373px) {
+    header {
+      padding:10px 0;
+      justify-content: center;
+    }
+
+    header h1 {
+      width: 100%;
+      text-align: center;
+      padding: 10px 20px;
+    }
+
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+    }
+  
+    .hero {
+        padding: 60px;
+        justify-content: center;
+    }
+    
+    .hero h2 {
+      position: static;
+      background: none;
+      text-align: center;
+      color: var(--primary-color);
+    }
+  
+    h3 {
+      font-size: 2.5rem;
+      padding: 10px;
+    }
+    
+    .para-about {
+      font-size: 1.2rem;
+    }
+    
+    .contact-info {
+      font-size: 1rem;
+      justify-content: space-around;
+      padding: 30px 0px;
+    }
+
+    .content {
+        padding-left: 50px;
+    }
+}
+  
+  /* Additional MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1060px) {
+    .contact-info {
+        font-size: .8rem;
+        flex: 0 1 75%;
+    }
+
+    h3 {
+        font-size: 2.25rem
+    }
+}
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 850px) {
+    header {
+     padding:10px 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+    .hero {
+        align-items: center;
+        padding: 40px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .para-about {
+        border: none;
+        text-align: center;
+    }
+
+    .work-cards {
+        border: none;
+    }
+
+    .contact-info {
+        border: none;
+        flex: 100%;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .contact-info a {
+        border: none;
+    }
+
+    h3 {
+        border-bottom: teal solid;
+    }
+}
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+  }
