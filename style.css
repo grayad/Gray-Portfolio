@@ -173,6 +173,7 @@ h3 {
     border-left: solid teal;
     justify-content: space-evenly;
 }
+
 /* contact me section */
 .contact-me {
     padding: 15px;
@@ -224,6 +225,11 @@ h3 {
         font-size: 1.5rem;
     }
 
+    h3 {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
     .hero {
         padding: 60px;
         justify-content: center;
@@ -234,11 +240,6 @@ h3 {
       background: none;
       text-align: center;
       color: var(--primary-color);
-    }
-
-    h3 {
-      font-size: 2.5rem;
-      padding: 10px;
     }
 
     .para-about {
@@ -258,13 +259,13 @@ h3 {
 
   /* Additional MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1180px) {
+    h3 {
+        font-size: 2.25rem
+    }
+
     .contact-info {
         font-size: .8rem;
         flex: 0 1 75%;
-    }
-
-    h3 {
-        font-size: 2.25rem
     }
 
     .resume img {
@@ -275,6 +276,10 @@ h3 {
 @media screen and (max-width: 997px) {
     header {
      padding:10px 0;
+    }
+
+    h3 {
+        border-bottom: teal solid;
     }
 
     .content {
@@ -329,10 +334,6 @@ h3 {
     .contact-info a {
         border: none;
     }
-
-    h3 {
-        border-bottom: teal solid;
-    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -349,6 +350,10 @@ h3 {
         font-size: 1.4rem;
     }
 
+    h3 {
+        font-size: 2rem;
+    }
+
     .hero{
         padding: 10px;
     }
@@ -356,9 +361,6 @@ h3 {
         font-size: 2.2rem;
     }
 
-    h3 {
-        font-size: 2rem;
-    }
     .para-about {
         font-size: 1rem;
     }
