@@ -89,12 +89,16 @@ h3 {
 .content {
     padding: 20px 50px 20px 100px;
     background-color: rgb(197, 215, 227);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 /* about me section */
 .about-me{
     padding: 15px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .para-about {
@@ -123,28 +127,52 @@ h3 {
 }
 
 .work-text {
-    background-color: lightpink;
-    color: teal;
+    background-color: teal;
+    color: white;
     text-align: center;
     font-family: sans-serif;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
 }
 
 .card-container {
     padding: 100px 200px;
     background-image: url(./Images/placeholder.jfif);
     background-size: cover;
+    background-position: 25%;
     margin: 5px;
-    border: solid lightpink;
-}
-
-#run-buddy {
-    background-image: url(./Images/RunBuddy.png);
+    border: solid teal;
+    position: relative;
+    flex: 1;
 }
 
 .card-container:hover {
     opacity: .60;
 }
 
+#run-buddy {
+    background-image: url(./Images/RunBuddy.png);
+    background-position: top;
+}
+
+/* resume section */
+.resume {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 80%;
+    align-items: center;
+    padding: 10px;
+    border-left: solid teal;
+    justify-content: space-evenly;
+}
 /* contact me section */
 .contact-me {
     padding: 15px;
@@ -193,7 +221,7 @@ h3 {
     }
 
     header nav ul li a {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     .hero {
@@ -229,7 +257,7 @@ h3 {
 }
 
   /* Additional MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1180px) {
     .contact-info {
         font-size: .8rem;
         flex: 0 1 75%;
@@ -238,9 +266,13 @@ h3 {
     h3 {
         font-size: 2.25rem
     }
+
+    .resume img {
+        max-width: 90%;
+    }
 }
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 997px) {
     header {
      padding:10px 0;
     }
@@ -263,6 +295,11 @@ h3 {
         align-items: center;
     }
 
+    .resume {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .contact-me {
         flex-direction: column;
         align-items: center;
@@ -274,6 +311,10 @@ h3 {
     }
 
     .work-cards {
+        border: none;
+    }
+
+    .resume-img {
         border: none;
     }
 
@@ -296,5 +337,25 @@ h3 {
   
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
 
+    header nav ul li a{
+        font-size: 1.4rem;
+    }
+
+    .hero{
+        padding: 10px;
+    }
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+    .para-about {
+        font-size: 1rem;
+    }
 }
