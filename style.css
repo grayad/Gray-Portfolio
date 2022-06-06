@@ -157,6 +157,26 @@ h3 {
     background-position: top;
 }
 
+#pw {
+    background-image: url(./Images/password-generator.png);
+    background-position: top;
+}
+
+#quiz {
+    background-image: url(./Images/quiz2.png);
+    background-position: bottom;
+}
+
+#scheduler {
+    background-image: url(./Images/scheduler.png);
+    background-position: top;
+}
+
+#finance-dashboard {
+    background-image: url(./Images/dashboard_blank.png);
+    background-position: top;
+}
+
 /* resume section */
 .resume {
     padding: 15px;
