@@ -177,6 +177,11 @@ h3 {
     background-position: top;
 }
 
+#weather {
+    background-image: url(./Images/weather-retriever.png);
+    background-position: top;
+}
+
 /* resume section */
 .resume {
     padding: 15px;
