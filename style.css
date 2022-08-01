@@ -182,6 +182,11 @@ h3 {
     background-position: top;
 }
 
+#habbit-rabbit {
+    background-image: url(./Images/localhost_3001_my-habits\ \(1\).png);
+    background-position: top;
+}
+
 /* resume section */
 .resume {
     padding: 15px;
