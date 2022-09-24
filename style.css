@@ -187,6 +187,11 @@ h3 {
     background-position: top;
 }
 
+#devnet {
+    background-image: url(./Images/devnet.png);
+    background-position: top;
+}
+
 /* resume section */
 .resume {
     padding: 15px;
